@@ -1,0 +1,250 @@
+/* Styling for About Us Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Khmer OS Battambang, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header & Nav */
+header {
+    background: #090d16;
+    color: #fff;
+    padding: 1.2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #00f2fe;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.4rem;
+    color: #00f2fe;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #00f2fe;
+}
+
+.lang-switch button {
+    background: #00f2fe;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #090d16;
+    transition: transform 0.2s;
+}
+
+.lang-switch button:hover {
+    transform: scale(1.05);
+}
+
+/* Page Title Banner */
+.page-title {
+    background: linear-gradient(135deg, #090d16 0%, #1e293b 100%);
+    text-align: center;
+    padding: 4rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.page-title h2 {
+    font-size: 2.2rem;
+    color: #00f2fe;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #94a3b8;
+}
+
+/* Quote Box */
+.quote-box {
+    background: rgba(30, 41, 59, 0.8);
+    border-left: 5px solid #00f2fe;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0 3rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.quote-icon {
+    font-size: 2rem;
+    color: #00f2fe;
+    margin-bottom: 10px;
+}
+
+.quote-box h3 {
+    font-size: 1.4rem;
+    color: #f8fafc;
+}
+
+.quote-box p {
+    color: #94a3b8;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Section */
+.section {
+    padding: 3rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    color: #00f2fe;
+}
+
+/* About Grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.about-card {
+    background: #1e293b;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.05);
+    text-align: center;
+}
+
+.about-card i {
+    font-size: 2.5rem;
+    color: #00f2fe;
+    margin-bottom: 1rem;
+}
+
+.about-card h3 {
+    margin-bottom: 1rem;
+    color: #f8fafc;
+}
+
+.about-card p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
+/* Leadership Section */
+.leadership-section {
+    background: #090d16;
+}
+
+.leader-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.leader-card {
+    background: #1e293b;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.leader-card.highlighted {
+    border: 2px solid #00f2fe;
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.2);
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    background: #0f172a;
+    color: #00f2fe;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin: 0 auto 1.2rem auto;
+    border: 2px solid #00f2fe;
+}
+
+.role-badge {
+    display: inline-block;
+    background: rgba(0, 242, 254, 0.15);
+    color: #00f2fe;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Footer */
+footer {
+    background: #05080f;
+    color: #94a3b8;
+    padding: 3rem 0 1rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-content a {
+    color: #00f2fe;
+    text-decoration: none;
+}
+
+.social-icons a {
+    color: #e2e8f0;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #00f2fe;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    padding-top: 1rem;
+    font-size: 0.85rem;
+}
